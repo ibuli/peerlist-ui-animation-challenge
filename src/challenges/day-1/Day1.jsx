@@ -99,13 +99,19 @@ const VerticalMenu = () => {
       </div>
 
       {/* Main Content */}
-      <section className="w-full h-screen flex items-center justify-center bg-gradient-to-br from-orange-500 via-gray-800 to-blue-600">
+      <section className="w-full h-screen flex items-center justify-center bg-gradient-to-br from-orange-500 via-gray-800 to-blue-600 px-4">
         <section className="text-center">
           <h1
             className="text-5xl font-bold text-white mb-4 tracking-wide"
             style={{ textShadow: '0 0 20px rgba(255,255,255,0.4)' }}
           >
-            UI Animation Challenge
+            UI Animation{' '}
+            <span className="relative inline-block">
+              Challenge{' '}
+              <span class="absolute top-0 -right-10 md:-right-8 text-sm text-white tracking-tight font-bold">
+                Day 1
+              </span>
+            </span>
           </h1>
           <div className="w-full max-w-2xl h-0.5 bg-white/50 mx-auto"></div>
           <p className="my-4">
