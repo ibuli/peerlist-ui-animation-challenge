@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Home, Mail, User, Settings } from 'lucide-react';
 import { useNavigate } from 'react-router';
-import Footer from '../../Footer';
+import Footer from '../Footer';
 
 const VerticalMenu = () => {
   const navigate = useNavigate();

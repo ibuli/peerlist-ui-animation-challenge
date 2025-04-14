@@ -9,7 +9,7 @@ import {
   ArrowRight,
   AlertTriangle,
 } from 'lucide-react';
-import Footer from '../../Footer';
+import Footer from '../Footer';
 
 // Status definitions with custom animations
 const statuses = {
@@ -322,23 +322,6 @@ const StatusIndicator = () => {
                 {isProcessing ? 'Processing...' : 'Process Transaction'}
               </button>
             </div>
-
-            {/* Transaction History Log */}
-            {/* <div className="w-full bg-gray-50 p-4 rounded-lg border border-gray-200">
-              <h3 className="text-sm font-semibold text-gray-700 mb-2">
-                Status History
-              </h3>
-              <div className="text-xs text-gray-600">
-                {isProcessing ? (
-                  <div className="flex items-center text-blue-600">
-                    <Loader2 className="w-3 h-3 mr-2 animate-spin" />
-                    <span>Transaction in progress...</span>
-                  </div>
-                ) : (
-                  <div className="text-gray-500">Ready to process</div>
-                )}
-              </div>
-            </div> */}
 
             {/* CSS Keyframes for animations */}
             <style jsx>{`

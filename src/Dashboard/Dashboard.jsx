@@ -13,7 +13,7 @@ const challenges = [
   },
   {
     title: 'Challenge 3',
-    enabled: false,
+    enabled: true,
   },
   {
     title: 'Challenge 4',
