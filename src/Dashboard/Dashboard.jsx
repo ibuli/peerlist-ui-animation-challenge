@@ -21,7 +21,7 @@ const challenges = [
   },
   {
     title: 'Challenge 5',
-    enabled: false,
+    enabled: true,
   },
 ];
 

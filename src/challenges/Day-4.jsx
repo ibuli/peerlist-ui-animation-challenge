@@ -1,8 +1,11 @@
 import { useState } from 'react';
 import { Award, ArrowLeft, CreditCard, CalendarDays } from 'lucide-react';
+import { useNavigate } from 'react-router';
+import Footer from '../Footer';
 
 const TabsSwitcher = () => {
-  // Single state to track which tab is active
+  const navigate = useNavigate();
+
   const [activeTab, setActiveTab] = useState('free');
 
   // Check if we're in the expanded premium view
@@ -29,6 +32,10 @@ const TabsSwitcher = () => {
   // Handle Annual tab click
   const handleAnnualClick = () => {
     setActiveTab('annual');
+  };
+
+  const handleGoBack = () => {
+    return navigate('/');
   };
 
   return (
@@ -241,6 +248,8 @@ const TabsSwitcher = () => {
               }
             `}</style>
           </section>
+
+          <Footer handleGoBack={handleGoBack} />
         </section>
       </section>
     </main>
